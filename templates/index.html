@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Zapurzaa Systems | Creative Innovation in NLP and Indian Languages</title>
+    <meta name="title" content="Zapurzaa Systems | Creative Innovation in NLP and Indian Languages">
+    <meta name="description" content="Zapurzaa Systems harnesses the power of technology with creative inspiration, focusing on Natural Language Processing and Indian languages to enhance human-device communication.">
+    <meta name="keywords" content="Zapurzaa, Natural Language Processing, NLP, Indian languages, technology innovation, software development, language technology">
+    <meta name="author" content="Zapurzaa Systems">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zapurzaasystems.com/">
+    <meta property="og:title" content="Zapurzaa Systems | Creative Innovation in NLP">
+    <meta property="og:description" content="Pioneering Natural Language Processing solutions with a focus on Indian languages and their unique linguistic structures.">
+    <meta property="og:image" content="{{ url_for('static', filename='images/zspl-logo-full.png', _external=True) }}">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.zapurzaasystems.com/">
+    <meta property="twitter:title" content="Zapurzaa Systems | Creative Innovation in NLP">
+    <meta property="twitter:description" content="Pioneering Natural Language Processing solutions with a focus on Indian languages and their unique linguistic structures.">
+    <meta property="twitter:image" content="{{ url_for('static', filename='images/zspl-logo-full.png', _external=True) }}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.zapurzaasystems.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon/favicon.ico') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='favicon/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='favicon/favicon-192x192.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">
+                <img src="{{ url_for('static', filename='images/zspl-logo-text.png') }}" alt="Zapurzaa Systems" class="logo-image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="https://www.enabeloapps.com" target="_blank">Enabelo Apps</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#careers">Join Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section" id="page-top">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <img src="{{ url_for('static', filename='images/zspl-logo-symbol.png') }}" alt="Zapurzaa Systems Symbol" class="hero-logo mb-4" width="150">
+                    <h1 class="animate-heading">Welcome to <span>Zapurzaa Systems</span></h1>
+                    <div class="separator"></div>
+                    <p class="lead">Harnessing the power of technology with creative inspiration</p>
+                    <a href="#about" class="btn btn-primary btn-lg">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Breadcrumb Navigation (hidden visually but available for SEO and screen readers) -->
+    <nav aria-label="breadcrumb" class="d-none">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+                <meta itemprop="position" content="1" />
+            </li>
+        </ol>
+    </nav>
+
+    <!-- Mission Section -->
+    <section class="page-section" id="mission">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/zspl-1-inspiration-copper.jpg') }}" alt="Creative Inspiration" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 my-auto">
+                    <div class="section-heading">
+                        <h2 id="inspiration-heading">Our Inspiration</h2>
+                        <div class="separator"></div>
+                    </div>
+                    <div class="content-box">
+                        <p><strong>Zapurzaa</strong>—a term rooted in Marathi literature, embodies the spirit of creative inspiration.</p>
+                        <p>At Zapurzaa Systems, we're dedicated to harnessing the power of software technology to bring innovative solutions to life.</p>
+                        <p>Our mission is to enhance human-device communication by embracing the richness of natural languages, with a special focus on Indian languages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NLP Section -->
+    <section class="page-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/zspl-2-nlp-light.jpg') }}" alt="NLP Visualization" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <div class="section-heading">
+                        <h2 id="nlp-heading">Natural Language Innovation</h2>
+                        <div class="separator"></div>
+                    </div>
+                    <div class="content-box">
+                        <p>We're pioneering new frontiers in Natural Language Processing, with a focus on Indian languages and their unique linguistic structures.</p>
+                        <p>Our technology bridges the gap between human expression and digital understanding, creating more intuitive and accessible interfaces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0" alt="Modern Workplace" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 my-auto">
+                    <div class="section-heading">
+                        <h2 id="about-us-heading">About Us</h2>
+                        <div class="separator"></div>
+                    </div>
+                    <div class="content-box">
+                        <p>Zapurzaa is a bold, new-age company redefining the way we work. We break free from traditional workplace structures and embrace a culture built on trust, autonomy, and results.</p>
+                        <p>At Zapurzaa, we empower our team members to bring their best to each project, trusting in their commitment to excellence. We give our people the space and independence they need to thrive, focusing on outcomes rather than rigid oversight.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Indian Languages Section -->
+    <section class="page-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/zspl-3-indian-languages.jpg') }}" alt="Indian Language Typography" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <div class="section-heading">
+                        <h2 id="indian-languages-heading">Embracing Indian Languages</h2>
+                        <div class="separator"></div>
+                    </div>
+                    <div class="content-box">
+                        <p>India's linguistic diversity is one of its greatest cultural treasures. At Zapurzaa, we're dedicated to preserving and enhancing this heritage through technology.</p>
+                        <p>Our solutions make digital experiences more accessible and meaningful by incorporating the nuances and richness of Indian languages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section class="page-section bg-copper-gradient text-white" id="careers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="section-heading">
+                        <h2 id="careers-heading">Join Our Team</h2>
+                        <div class="separator light"></div>
+                    </div>
+                    <p class="mb-4" style="color: var(--secondary-color);">We're currently developing several exciting projects based on Natural Language Processing (NLP), set to launch early next year.</p>
+                    <p class="mb-4" style="color: var(--secondary-color);">To augment our team, we're seeking exceptional interns with a strong interest in cutting-edge technology and a passion for continuous learning. If you're ready to be part of something innovative, we'd love to hear from you!</p>
+                    <p class="mb-5" style="color: var(--secondary-color);">We don't require a formal degree or a specific educational background, but you must be proficient in Python, NodeJS, and React. Familiarity with GCP and relational or No-SQL databases is required. Hands-on experience in Vibe coding will be a big plus. Additionally, if you're skilled in modern software development practices and passionate about building impactful products, we'd love to connect. At Zapurzaa, it's your talent, drive, and commitment to innovation that matters most.</p>
+                    <a href="mailto:info@zapurzaasystems.com" class="btn btn-light btn-xl">Send Your Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workplace Culture Section -->
+    <section class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2 id="culture-heading">Our Culture</h2>
+                        <div class="separator"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="culture-card">
+                        <div class="icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>We embrace new ideas and creative approaches to solving complex problems.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="culture-card">
+                        <div class="icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Collaboration</h3>
+                        <p>We work together across disciplines to achieve extraordinary results.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="culture-card">
+                        <div class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Growth</h3>
+                        <p>We foster continuous learning and professional development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="page-section bg-light" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="section-heading">
+                        <h2 id="contact-heading">Contact Us</h2>
+                        <div class="separator"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>India: +91-7030-835116</p>
+                        <p>USA: +1-408-529-6312</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@zapurzaasystems.com">info@zapurzaasystems.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Website</h3>
+                        <p><a href="http://www.zapurzaasystems.com" target="_blank">www.zapurzaasystems.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024-28 Zapurzaa Systems. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/zapurzaasystems" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#page-top" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+    <!-- Additional SEO Links (hidden from view) -->
+    <div class="d-none">
+        <p>
+            <a href="{{ url_for('sitemap') }}">Sitemap</a> |
+            <a href="{{ url_for('robots') }}">Robots.txt</a> |
+            <a href="#about">About Zapurzaa Systems</a> |
+            <a href="#mission">Our Mission</a> |
+            <a href="https://www.enabeloapps.com" rel="noopener">Products - Enabelo Apps</a> |
+            <a href="#careers">Join Our Team</a> |
+            <a href="#contact">Contact Zapurzaa Systems</a>
+        </p>
+    </div>
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Zapurzaa Systems",
+        "url": "https://www.zapurzaasystems.com/",
+        "logo": "{{ url_for('static', filename='images/zspl-logo-full.png', _external=True) }}",
+        "description": "Zapurzaa Systems harnesses the power of technology with creative inspiration, focusing on Natural Language Processing and Indian languages to enhance human-device communication.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "India"
+        },
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+91-7030-835116",
+                "contactType": "customer service",
+                "areaServed": "India"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1-408-529-6312",
+                "contactType": "customer service",
+                "areaServed": "US"
+            }
+        ],
+        "sameAs": [
+            "https://www.linkedin.com/company/zapurzaasystems"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Zapurzaa Systems Products",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "SoftwareApplication",
+                        "name": "Enabelo Apps",
+                        "url": "https://www.enabeloapps.com"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Local Business Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Zapurzaa Systems",
+        "image": "{{ url_for('static', filename='images/zspl-logo-full.png', _external=True) }}",
+        "priceRange": "$$",
+        "description": "A technology company specializing in Natural Language Processing and Indian languages.",
+        "telephone": "+91-7030-835116",
+        "email": "info@zapurzaasystems.com",
+        "url": "https://www.zapurzaasystems.com/",
+        "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+    
+    <!-- Article Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Zapurzaa Systems - Creative Innovation in NLP and Indian Languages",
+        "description": "Zapurzaa Systems harnesses the power of technology with creative inspiration, focusing on Natural Language Processing and Indian languages.",
+        "image": "{{ url_for('static', filename='images/zspl-logo-full.png', _external=True) }}",
+        "author": {
+            "@type": "Organization",
+            "name": "Zapurzaa Systems",
+            "url": "https://www.zapurzaasystems.com/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Zapurzaa Systems",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ url_for('static', filename='images/zspl-logo-full.png', _external=True) }}"
+            }
+        },
+        "datePublished": "2025-04-17",
+        "dateModified": "2025-04-17",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.zapurzaasystems.com/"
+        }
+    }
+    </script>
+</body>
+</html>
